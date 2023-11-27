@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio Corregidora</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/modal.js"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <!-- Encabezado -->
+        <div class="encabezado">
+            <img draggable="false" src="assets/icons/logo-nuevo.svg" alt="Logo de la empresa">
+        </div>
+        <!-- Título -->
+        <div class="titulo">
+            <h1>Tome su turno</h1>
+        </div>
+        <!-- Botones -->
+        <div class="item_container">
+            <div class="item">
+                <button type="button" class="boton_sitio" id="btnLaboratorio">
+                    <span class="button_icon ">
+                        <img draggable="false" src="assets/icons/icon-clinic.svg">
+                    </span>
+                    <span class="button_text">LABORATORIO</span>
+                </button>
+            </div>
+            <div class="item">
+                <button type="button" class="boton_sitio" id="btnRadiologia">
+                    <span class="button_icon ">
+                        <img draggable="false" src="assets/icons/imagenologia.svg">
+                    </span>
+                    <span class="button_text">RADIOLOGÍA E IMAGEN</span>
+                </button>
+            </div>
+            <div class="item">
+                <button type="button" class="boton_sitio" id="btnAmbos">
+                    <span class="button_icon">
+                        <img draggable="false" src="assets/icons/lab_radio_combinados.svg">
+                    </span>
+                    <span class="button_text">AMBOS SERVICIOS</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="item">
+            <button type="button" class="boton_sitio" id="btnNormal">
+                <span class="button_icon">
+                    <img draggable="false" src="assets/icons/touch.svg">
+                </span>
+                <span class="button_text">Normal</span>
+            </button>
+        </div>
+        <div class="item">
+            <button type="button" class="boton_sitio" id="btnPreferencial">
+                <span class="button_icon">
+                    <img draggable="false" src="assets/icons/disabled.svg">
+                </span>
+                <span class="button_text">Preferencial</span>
+            </button>
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <!-- Modal -->
+    <div id="myModal2" class="modal">
+        <!-- Modal content -->
+        <div class="modal-bienvenida">
+            <p class="titulo_modal">BIENVENIDO</p>
+            <p class="descripcion-modal_bienvenida">PASE A LA SALA DE ESPERA</p>
+            <p class = "descripcion-modal_bienvenida">EN BREVE SERÁ ATENDIDO</p>
+        </div>
+    </div>
+    <!-- Modal -->
+
+</body>
+
+</html>

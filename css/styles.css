@@ -1,0 +1,160 @@
+:root {
+    --logo-color: #002060;
+    --main-color: #194272;
+    --active-color: #1686FB;
+    --body-color: #f2f2f2;
+    --letter-color: #f2f2f2;
+    --modal-bienvenida-color: #4A95F8;
+    --color-3: #007af6;
+}
+
+body {
+    margin: 0;
+    user-select: none;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--body-color);
+}
+
+.contenedor {
+    width: 1000px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.encabezado,
+.titulo {
+    text-align: center;
+    width: 100%;
+    height: 70px;
+}
+
+.titulo {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--logo-color);
+}
+
+.encabezado img {
+    max-width: 300px;
+}
+
+.item_container {
+    display: inline-flex;
+    width: 900px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.modal_container,
+.modal {
+    display: none;
+    position: fixed;
+    justify-content: center;
+}
+
+.modal_container {
+    width: 900px;
+    background-color: rgba(109, 109, 109, 0.691);
+}
+
+.modal {
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.839);
+}
+
+.modal .item {
+    margin: 40px 0;
+}
+
+.modal-bienvenida {
+    max-width: 500px;
+    text-align: center;
+    background-color: var(--main-color);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    transition: opacity 0.2s ease-out;
+}
+
+.titulo_modal {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+
+.descripcion-modal_bienvenida {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.button:active {
+    background-color: #1686FB;
+    transform: translateY(2px);
+    transition: background-color 0.10s ease-out; 
+}
+
+.button_icon,
+.button_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.button_text {
+    flex: 1;
+    font-size: 26px;
+    font-weight: 550;
+    color: white;
+}
+
+.button_icon {
+    flex: 2;
+    max-width: 100px;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.boton_sitio {
+    position: relative;
+    display: inline-flex;
+    min-width: 350px;
+    height: 120px;
+    padding: 5px 20px;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.3s;
+    align-items: center;
+    border: none;
+    user-select: none;
+}
+
+.boton_sitio:active {
+    background-color: #1686FB;
+    transform: translateY(2px);
+    transition: background-color 0.10s ease-out; 
+}
